@@ -396,7 +396,7 @@ class MainActivity : Activity() {
                 gravity = Gravity.CENTER_VERTICAL
                 setPadding(0, dp(5), 0, dp(5))
             }
-            val name = textView("${file.name}\\n${file.length() / 1024} KiB", 12f, Color.WHITE)
+            val name = textView("${file.name}\n${file.length() / 1024} KiB", 12f, Color.WHITE)
             row.addView(name, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
             val remove = Button(this).apply {
                 text = "Delete"
