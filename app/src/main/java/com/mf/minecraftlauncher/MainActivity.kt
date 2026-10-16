@@ -424,7 +424,7 @@ class MainActivity : Activity() {
     private fun promptAddServer() {
         val input = EditText(this).apply {
             hint = "example.org or play.example.org:25565"
-            singleLine = true
+            isSingleLine = true
             setPadding(dp(12), dp(10), dp(12), dp(10))
         }
         AlertDialog.Builder(this)
@@ -491,7 +491,7 @@ class MainActivity : Activity() {
     private fun promptSkinUsername() {
         val input = EditText(this).apply {
             hint = "Minecraft username"
-            singleLine = true
+            isSingleLine = true
             setText(preferences.getString("skin_username", ""))
         }
         AlertDialog.Builder(this)
